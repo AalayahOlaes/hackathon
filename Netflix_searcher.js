@@ -3,6 +3,9 @@
 const searchBar = document.getElementById("search-form");
 const input = document.getElementById("search-input");
 const page = document.getElementById("page");
+const myDiv = document.createElement("div");
+myDiv.setAttribute("class","content");
+
 
 searchBar.addEventListener("submit", (event) => {
   // if (event.code === "Enter") {
@@ -14,6 +17,9 @@ searchBar.addEventListener("submit", (event) => {
 });
 
 function getRequest(searchTerm) {
+  const body = document.querySelector('body');
+  body.classList.add('search');
+
   const options = {
     method: "GET",
     headers: {
@@ -42,8 +48,10 @@ function getRequest(searchTerm) {
           if (counter === 5) break;
           if (item.title && counter < 5) {
             
-            const fetchedTitle = document.createElement('li');
+            const fetchedTitle = document.createElement('p');
             const fetchedYear = document.createElement('p');
+            fetchedYear.style.border = 'white';
+            fetchedYear.style.borderWidth = '2px';
             const fetchedSynopsis = document.createElement('p');
             // const fetchedImage = document.createElement('img');
             
@@ -86,3 +94,7 @@ function getRandomItems(items, count) {
 
 
 //     console.log("data:", data);
+
+
+//Extension: /Users/aalayaholaes/Desktop/codesmith/hackathon.crx
+// Key File: /Users/aalayaholaes/Desktop/codesmith/hackathon.pem

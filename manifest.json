@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Yelp_Helper",
-  "description": "Finds certain cuisines of restaurants around",
+  "name": "Netflix-Searcher",
+  "description": "Find Movies From certain Genres",
   "version": "1.0"
 }

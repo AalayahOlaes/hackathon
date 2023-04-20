@@ -1,0 +1,38 @@
+.genre{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 80px;
+  color: #E50914;
+  margin-bottom:0px;
+}
+.search-input{
+  margin-top:20px;
+}
+ html {
+  background-color: black;
+    color: #E50914;
+  }
+
+.movie {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+.title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .year {
+    font-size: 16px;
+    color: gray;
+  }
+  
+  .synopsis {
+    font-size: 14px;
+  }
+
+  .page {
+    border-color: antiquewhite;
+    border-style:solid;
+    border-width:2px;
+  }

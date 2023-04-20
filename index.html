@@ -2,18 +2,26 @@
 <html>
   <head>
     <title>Netflix Searcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Netflix_searcher.css" />
     <meta charset="utf-8" />
   </head>
-  <body>
-    <p>Search for show!</p>
+  <body class = "body">
+    <p class = "genre">What genre are you feeling today?</p>
     <form action="" id="search-form">
       <input type="text" id="search-input" placeholder="Search..." />
       <button type="submit" id="search-button">Search</button>
     </form>
     <div id="page"></div>
     <div>
-      <ul id="movieList"></ul>
+      <div id="movieList"></div>
+      <!-- <div class="movie">
+        <p class="title">Title: ${item.title}</p>
+        <p class="year">Release Year: ${item.released}</p>
+        <p class="synopsis">Synopsis: ${item.synopsis}</p>
+      </div> -->
     </div>
   </body>
   <script src="Netflix_searcher.js"></script>

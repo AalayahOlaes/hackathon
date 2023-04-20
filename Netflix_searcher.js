@@ -32,19 +32,20 @@ function getRequest(searchTerm) {
       console.log(data);
 
       const page = document.querySelector("#page");
-      if (data && data.length > 0) {
-        data.forEach((item) => {
+      // if (data && data.length > 0) {
+        console.log('test data')
+        const dataArray = data.results;
+        dataArray.forEach((item) => {
           if (item.title) {
-            const fetchedTitle = document.createElement("div");
+            const fetchedTitle = document.createElement('li');
             fetchedTitle.innerText = `Title: ${item.title}`;
             page.appendChild(fetchedTitle);
+          } else {
+            const noResults = document.createElement("div");
+            noResults.innerText = "No results found";
+            page.appendChild(noResults);
           }
         });
-      } else {
-        const noResults = document.createElement("div");
-        noResults.innerText = "No results found";
-        page.appendChild(noResults);
-      }
     })
     .catch((error) => {
       console.error(error);

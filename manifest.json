@@ -2,5 +2,11 @@
   "manifest_version": 3,
   "name": "Netflix-Searcher",
   "description": "Find Movies From certain Genres",
-  "version": "1.0"
+  "version": "1.0",
+  "action": {
+    "default popup": "index.html"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon-32.png"
+  }
 }

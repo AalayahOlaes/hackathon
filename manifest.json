@@ -1,0 +1,6 @@
+{
+  "manifest_version": 3,
+  "name": "Yelp_Helper",
+  "description": "Finds certain cuisines of restaurants around",
+  "version": "1.0"
+}

@@ -32,7 +32,7 @@ function getRequest(searchTerm) {
       let counter = 0;
       const page = document.querySelector("#page");
       // if (data && data.length > 0) {
-        
+      page.innerHTML = '';
         const dataArray = data.results;
         const randomItems = getRandomItems(data.results, 5)
         for (let i = 0; i < randomItems.length; i++){
